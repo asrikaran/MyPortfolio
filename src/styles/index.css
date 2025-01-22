@@ -1,0 +1,372 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and general layout */
+  body, html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+  }
+  
+  /* Navbar - Sticky at the top */
+  header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, rgba(255, 87, 34, 1) 0%, rgba(255, 193, 7, 1) 100%);
+    padding: 20px 0;
+    z-index: 1000;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  header nav a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  header nav a.active {
+    color: #ff5722;
+  }
+  
+  /* Main Section */
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .section h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  /* Skill Section */
+  #skills {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+    padding: 80px 20px;
+  }
+  
+  #skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  #skills li {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #skills li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-8px);
+  }
+  
+  /* Project Section */
+  #projects {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #c95845, #7b7777, #9e5629);
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  #projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  #projects li {
+    background-color: #fff;
+    padding: 20px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #projects li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  #projects li h3 {
+    font-size: 1.8rem;
+    color: #f44336;
+    margin-bottom: 15px;
+  }
+  
+  #projects li p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  #projects li a {
+    color: #ff5722;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #projects li a:hover {
+    color: #f44336;
+  }
+  
+  /* Certificate Section */
+  #certificates {
+    background: linear-gradient(135deg, #6a11cb, #fc9025);
+    padding: 80px 20px;
+    color: rgb(43, 19, 19);
+  }
+  
+  #certificates h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .certificates li {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 230px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .certificates li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  .certificates img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensures the image doesn't exceed its container's height */
+    height: auto; /* Maintains the aspect ratio */
+    width: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes inline-block spacing issues */
+    margin: 0 auto; /* Centers the image inside the container */
+    border-radius: 8px; /* Keeps the rounded corners */
+}
+
+.modal img {
+    max-width: 90%; /* Limits image width to fit within modal */
+    max-height: 90%; /* Limits image height to fit within modal */
+    object-fit: contain; /* Ensures the image maintains aspect ratio without cropping */
+    display: block; /* Centers the image */
+    margin: 0 auto; /* Adds vertical and horizontal centering */
+    border-radius: 8px; /* Keeps the rounded corners */
+}
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjusts for content padding */
+    border-radius: 12px;
+    background: #fff;
+    max-width: 90%; /* Prevents the modal from being too wide */
+    max-height: 90%; /* Prevents the modal from being too tall */
+    overflow: hidden; /* Ensures no overflow */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Keeps a subtle shadow */
+}
+
+
+/*   
+  .certificates img {
+    width: 100%;
+    border-radius: 8px;
+  }
+   */
+  .certificates p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background: linear-gradient(135deg, #56f38a, #8b74e7, #d9338e);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  #contact p a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #contact p a:hover {
+    color: #f44336;
+  }
+  
+  /* Modal for Certificates */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal img {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background-color: #f44336;
+  }
+  #about {
+    background: linear-gradient(to right, #ff675f, #7ba7fe); /* Subtle gradient for the About Me section */
+    padding: 60px 20px;
+    color: rgb(243, 33, 33);
+    text-align: left; /* Align text to the left for better readability */
+    border-radius: 15px; /* Add some rounding for a smooth look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+}
+
+#about h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0c0b0b;
+    text-align: center; /* Center the heading */
+}
+#about h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:  #000000;
+    text-align: center; /* Center the heading */
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #050000;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#about ul li:hover {
+    transform: translateY(-5px);
+    background: rgba(252, 12, 220, 0.3);
+}

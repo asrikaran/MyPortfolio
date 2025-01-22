@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Blood Cell Detection",
+        "description": "Machine Learning project by using YOLO framework we can detect WBC, RBC,Platelets count. https://ijsrnsc.org/current_issue.php ",
+        "github": "https://github.com/asrikaran/Blood-Cell-Detection"
+    },
+    {
+        "name": "Sports Hub",
+        "description": "Built a College Sports Resource Management Application. https://xadzkjdx.cn/index.php/volume-17-issue-10-october-23/  ",
+        "github": "https://github.com/asrikaran"
+    },
+    {
+        "name": "Bus Management System",
+        "description": "A tool to find bus routes and numbers by College ID.",
+        "github": "https://github.com/asrikaran"
+    },
+    {
+      "name": "User Notification Preference API",
+      "description": "Developed and deployed a serverless RESTful API for managing user notification preferences, featuring CRUD operations, validation, rate-limiting, and detailed documentation.",
+      "github": "https://github.com/asrikaran/notification-preferences-api"
+    },
+    {
+      "name": "Demand Planning",
+      "description": "Developed a Demand Planning application using Spring Boot that analyses sales data, predicts future trends, identifies the best-performing sales periods of the year, and retrieves month-specific sales data to support informed business decisions.",
+      "github": "https://github.com/asrikaran/DemandPlanningBackend"
+    }
+
+  ]
+  
